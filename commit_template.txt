@@ -1,0 +1,19 @@
+[🐞 BUG / ➕ FR / 🎨 REF / 📝 DOC / ⏪️ RVT / 📦️ PKG / ⚡️ PER] <message;message;>
+
+[🐞 BUG] -> Bug Fix
+➕ FR -> adding a feature 
+
+-> refactor
+[📝 DOC] -> Documentaion/README
+[⏪️ RVT] -> Reverting changes
+[📦️ PKG] -> Package/dependecies changes (upgrade/downgrade)
+[⚡️ PERF] -> performance improvement.
+[🔨 hammer:] Add or update development scripts. 
+[:twisted_rightwards_arrows: Merge] Merge branches. 🔂
+[🧪 test] add unit testing
+
+example:
+
+[➕ FR] Adding login Page; adding startup page;
+[ 📦️ PKG ] Adding login Page; adding startup page;
+🧪 add unit testing

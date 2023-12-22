@@ -1,0 +1,25 @@
+version: '3'
+services:
+  jenkins:
+    image: tweaxy/jenkins
+    container_name: jenkins
+    ports:
+      - "80:8080"
+    environment:
+      - "AWS_ACCESS_KEY_ID=*****************"
+      - "AWS_SECRET_ACCESS_KEY=*******************"
+      - "CURR_TAG_NUM=3"
+      - "backend_dev_user=ec2-user"
+      - "backend_dev_server=16.171.65.142"
+      - "frontend_dev_user=omarsaid"
+      - "frontend_dev_server=tweaxy.gleeze.com"
+      - "chat_dev_server=tweaxychat.gleeze.com"
+      - "chat_dev_user=omarsaid"
+    volumes:
+      - "$PWD/jenkins_home:/var/jenkins_home"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - net
+networks:
+  net:
+

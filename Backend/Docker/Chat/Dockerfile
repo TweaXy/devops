@@ -1,0 +1,44 @@
+FROM ubuntu:latest
+SHELL ["/bin/bash", "-c"]
+RUN apt update
+
+# download nodejs
+RUN apt install -y npm
+RUN apt install -y curl
+RUN mkdir -p /usr/local/nvm
+ENV NVM_DIR /usr/local/nvm
+ENV NODE_VERSION v21.1.0
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+RUN  source $NVM_DIR/nvm.sh && nvm install $NODE_VERSION && nvm use --delete-prefix $NODE_VERSION
+RUN node --version
+ENV NODE_PATH $NVM_DIR/v$NODE_VERSION/lib/node_modules
+ENV PATH $NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
+RUN source $NVM_DIR/bash_completion
+RUN node --version
+RUN npm install -g prisma
+# Downloading nginx
+RUN apt install -y nginx
+COPY ./default.conf /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/sites-enabled//default
+WORKDIR /etc/nginx/dhparam
+RUN openssl dhparam -out dhparam-2048.pem 2048
+EXPOSE 80
+EXPOSE 443
+WORKDIR /app/chat
+COPY . .
+RUN chmod +x npm_run.sh
+RUN npm install
+RUN npx prisma generate
+CMD ./npm_run.sh
+
+
+
+
+
+
+
+
+
+
+
+
