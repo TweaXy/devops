@@ -7,9 +7,9 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 
 ## 📝 Table of Contents
 - [Containerization](#Containerization)
-- [Cloud Providers](#Cloud Providers)
+- [Cloud Providers](#Cloud-Providers)
 - [Deployment](#Deployment)
-- [CI/CD Pipeline](# CI/CD Pipeline)
+- [CI/CD Pipeline](#CI/CD-Pipeline)
 - [Monitoring](#Monitoring)
 - [Environment Variables](#Environment Variables)
 - [Badges](#Badges)
@@ -26,7 +26,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - `jenkins` (1 version).
 - `chat` (1 version)
 
-# Cloud Providers
+# Cloud-Providers
 
 
 1. AWS Services:
@@ -57,7 +57,7 @@ Dedicated Server:
    ./<servicename>.sh
 ```
 
-# CI/CD Pipeline
+# CI/CD-Pipeline
 
 ## Overview
 
