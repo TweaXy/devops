@@ -17,7 +17,7 @@ receivers:
       from: osazizsg1@gmail.com
       smarthost: smtp.gmail.com:587
       auth_username: "osazizsg1@gmail.com"
-      auth_password: "xycr eqpo ujws boma"
+      auth_password: " password "
 inhibit_rules:
   - source_match:
       severity: 'critical'
