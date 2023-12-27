@@ -3,8 +3,7 @@
 
 A social media app that was implemented as a clone for X (Twitter).
 
-This repo features the `Devops` part related to CI/CD.
-
+This repository is dedicated to the meticulous implementation of our DevOps strategy, specifically focusing on Continuous Integration (CI) and Continuous Deployment (CD). Within these confines, a refined pipeline is designed to optimize development processes and ensure the smooth deployment of our social media application.
 
 ## Containerization
 **Docker Containerization**:
