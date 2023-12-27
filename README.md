@@ -5,7 +5,15 @@ A social media app that was implemented as a clone for X (Twitter).
 
 This repository is dedicated to the meticulous implementation of our DevOps strategy, specifically focusing on Continuous Integration (CI) and Continuous Deployment (CD). Within these confines, a refined pipeline is designed to optimize development processes and ensure the smooth deployment of our social media application.
 
-## Containerization
+## 📝 Table of Contents
+- [Containerization](#Containerization)
+- [Cloud Providers](#Cloud Providers)
+- [Deployment](#Deployment)
+- [CI/CD Pipeline](# CI/CD Pipeline)
+- [Monitoring](#Monitoring)
+- [Environment Variables](#Environment Variables)
+- [Badges](#Badges)
+# Containerization
 **Docker Containerization**:
 
 - [Docker Compose](https://docs.docker.com/compose/) files are available to simplify the deployment of multi-container applications. You can find them in the [docker-compose](docker-compose/) directory.
@@ -17,7 +25,8 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - `frontend` (2 versions).
 - `jenkins` (1 version).
 - `chat` (1 version)
-## Cloud Providers
+
+# Cloud Providers
 
 
 1. AWS Services:
@@ -29,7 +38,8 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 
 2. Azure Services:
    - **virtual Machines** for the deployment of the jenkins server, frontend server and chat micro service.
-## Deployment
+
+# Deployment
 
 Each service is provided with two scripts that act as two stages for deployment:
 
@@ -83,7 +93,7 @@ The backend CI/CD pipeline follows a similar structure:
 The Jenkins server is configured to automatically trigger the CI/CD pipeline on pull requests. This ensures that every change is thoroughly validated before being merged into the dev/main branch.
 
 
-## Monitoring
+# Monitoring
 ### Tools Used
 
 - **Prometheus**: An open-source monitoring and alerting toolkit designed for reliability and scalability.
