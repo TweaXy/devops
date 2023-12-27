@@ -108,6 +108,7 @@ Alerts are configured to notify the team of any abnormal behavior or critical is
 ## Grafana Dashboards
 
 [Grafana](https://grafana.com/) dashboards provide a visual representation of the monitored metrics. You can access Grafana to view historical data, trends, and performance insights.
+![image](https://github.com/TweaXy/devops/assets/87082462/4cf6c5e7-276a-4feb-91ef-a30ccc0cdc0e)
 
 
 
