@@ -109,8 +109,8 @@ Alerts are configured to notify the team of any abnormal behavior or critical is
 
 [Grafana](https://grafana.com/) dashboards provide a visual representation of the monitored metrics. You can access Grafana to view historical data, trends, and performance insights.
 ![image](https://github.com/TweaXy/devops/assets/87082462/4cf6c5e7-276a-4feb-91ef-a30ccc0cdc0e)
-
-
+![image](https://github.com/TweaXy/devops/assets/87082462/f3009108-342e-4248-9d6f-87ef1b1d3ee5)
+![image](https://github.com/TweaXy/devops/assets/87082462/c4cc619f-03de-4c58-a3f6-61150b8f394f)
 
 
 ## Environment Variables
