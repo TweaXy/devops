@@ -1,0 +1,21 @@
+version: '3.6'
+services:
+  frontend:
+    image: "$DOCKER_USER/frontend:$BUILD_ID"
+    container_name: "frontend"
+    ports:
+     - "80:80"
+     - "443:443"
+    volumes:
+       - './certbot/data:/usr/share/nginx/html/letsencrypt'
+       - './certbot/conf:/etc/nginx/ssl'
+    networks:
+       - net
+  certbot:
+     image: certbot/certbot:latest
+     command:  certonly --webroot --webroot-path=/usr/share/nginx/html/letsencrypt --email tweaxysw@gmail.com --agree-tos --no-eff-email -d tweaxy.gleeze.com
+     volumes:
+       - './certbot/conf:/etc/letsencrypt'
+       - './certbot/data:/usr/share/nginx/html/letsencrypt'
+networks:
+  net:
