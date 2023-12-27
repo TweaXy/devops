@@ -11,7 +11,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - [Deployment](#Deployment)
 - [CI/CD Pipeline](#CI/CD-Pipeline)
 - [Monitoring](#Monitoring)
-- [Environment Variables](#Environment Variables)
+- [Environment Variables](#Environment-Variables)
 - [Badges](#Badges)
 # Containerization
 **Docker Containerization**:
@@ -122,7 +122,7 @@ Alerts are configured to notify the team of any abnormal behavior or critical is
 ![image](https://github.com/TweaXy/devops/assets/87082462/c4cc619f-03de-4c58-a3f6-61150b8f394f)
 
 
-## Environment Variables
+## Environment-Variables
 
 To build this project's backend image, you will need to have the following environment variables file before running the `docker build` command
 
