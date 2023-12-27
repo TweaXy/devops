@@ -9,7 +9,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - [Containerization](#Containerization)
 - [Cloud Providers](#Cloud-Providers)
 - [Deployment](#Deployment)
-- [CI/CD Pipeline](#CICD-Pipeline)
+- [CI/CD Pipeline](#CI-CD-Pipeline)
 - [Monitoring](#Monitoring)
 - [Environment Variables](#Environment-Variables)
 - [Badges](#Badges)
@@ -57,7 +57,7 @@ Dedicated Server:
    ./<servicename>.sh
 ```
 
-# CICD-Pipeline
+# CI-CD-Pipeline
 
 ## Overview
 
