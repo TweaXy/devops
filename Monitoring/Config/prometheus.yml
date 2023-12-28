@@ -30,23 +30,48 @@ scrape_configs:
   - job_name: 'frontend-server'
     static_configs:
       - targets: ["51.12.58.141:9100"]
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'frontend-server'
   - job_name: 'jenkins-server'
     static_configs:
       - targets: ["98.67.166.26:9100"]
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'jenkins-server'
   - job_name: 'chat-server'
     static_configs:
       - targets: ["20.77.66.213:9100"]
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'chat-server'
   - job_name: 'backend-server'
     static_configs:
       - targets: ["16.171.65.142:9100"]
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'backend-server'
   - job_name: 'frontend-containers'
     static_configs:
       - targets: ["51.12.58.141:8080"]
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'frontend-containers'
   - job_name: 'chat-containers'
     static_configs:
       - targets: ["20.77.66.213:8080"]
-
-
-
-
-
+    relabel_configs:
+      - source_labels: [__address__]
+        regex: '.*'
+        target_label: instance
+        replacement: 'chat-containers'
