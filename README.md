@@ -13,6 +13,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - [Monitoring](#Monitoring)
 - [Environment Variables](#Environment-Variables)
 - [Web Server](#Web-Server)
+- [Logging](#Logging)
 - [Badges](#Badges)
 # Containerization
 **Docker Containerization**:
