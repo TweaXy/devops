@@ -12,6 +12,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 - [CI/CD Pipeline](#CI-CD-Pipeline)
 - [Monitoring](#Monitoring)
 - [Environment Variables](#Environment-Variables)
+- [Web Server](#Web-Server)
 - [Badges](#Badges)
 # Containerization
 **Docker Containerization**:
@@ -131,7 +132,14 @@ To build this project's backend image, you will need to have the following envir
 
 `.env`
 
+# Web-server
+`Nginx` is the dedicated web server for frontend, APIs and chat microservice, configured with ssl certificate using `certbot`.
 
+
+# Logging
+`AWS Cloudwatch` is the dedicated logging driver  APIs service.
+
+`fluentd` is the dedicated logging driver for chat microservice. `fluentd` exports logs to a `mongodb` document.
 # Badges
 
 
