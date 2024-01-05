@@ -81,7 +81,8 @@ The frontend CI/CD pipeline includes the following steps:
 
 The backend CI/CD pipeline follows a similar structure:
 
-1. **Building**: Backend code is built to be ready for deployment.
+1. **Pre-Building**: before deploying APIS a local mysql container is initiated to run the unit tests.
+2. **Building**: Backend code is built to be ready for deployment.
 
 2. **Testing**: Automated unit tests are run to validate the functionality and reliability of the frontend code.
 
