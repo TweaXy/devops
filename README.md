@@ -106,10 +106,12 @@ The Jenkins server is configured to automatically trigger the CI/CD pipeline on 
 #### Servers
 
 Prometheus collects and stores metrics from servers, offering insights into CPU usage, memory utilization, disk I/O, and other vital system statistics.
+`node-exporter` is used.
 
 #### Containers
 
 Containerized applications are monitored to track resource usage, container health, and other relevant metrics.
+`cadvisor` is used.
 
 ### Alerts
 
