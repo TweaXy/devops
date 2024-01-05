@@ -44,7 +44,7 @@ This repository is dedicated to the meticulous implementation of our DevOps stra
 Each service is provided with two scripts that act as two stages for deployment:
 
 - deploy.sh => run on jenkins server
-- <service-name>.sh => run on the service server(s)
+- service-name.sh => run on the service server(s)
 
 Jenkins-server:
 ```bash
